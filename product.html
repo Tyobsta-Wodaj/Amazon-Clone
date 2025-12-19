@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <header>
+        <nav id="navbar">
+          <a href="#home"><img src="https://logos-world.net/wp-content/uploads/2020/08/Amazon-Logo-2012.png" width="100px" id="logo"></a>
+          <div class="deliverd-to">
+            <p>Deliver to</p>
+            <h3>United Kingdom</h3>
+          </div>
+          
+            <div id="searchdiv">
+                <select id="select">
+                    <option value="all" disabled selected>All</option>
+                    <option value="">op2</option>
+                    <option value="">op3</option>
+                    <option value="">op4</option>
+                    <option value="">op5</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" id="search">
+                <i class="fa-solid fa-magnifying-glass" id="searchicone"></i>
+            </div>
+            <div class="language">
+                <select >
+                    <option value="EN" disabled selected>EN</option>
+                </select>
+            </div>
+            <div class="returns">
+                <p>Returns</p>
+                <h3>& Orders</h3>
+            </div>
+          <button id="signin">Sign in</button>
+          
+          <p id="cart"><i class="fa-solid fa-cart-arrow-down" ></i><span id="num-of-items"> 0</span></p>
+
+        </nav>
+        <div id="nav2">
+            <p>All</p>
+            <p>Today's Deals</p>
+            <p>Customer Survice</p>
+            <p>Register</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+    </header>
+  <div class="container">
+    <div class="product-detail">
+        <h1>Product Details</h1>
+          <div id="product">
+            <img id="product-image">
+            <p id="price"></p>
+            <p id="description"></p>
+          </div>
+    </div>
+    <div class="add-container">
+      <div class="container2">
+          <h4>Buy new</h4>
+          <h3>Get <b>Fast</b>, <b>Free Shopping</b></h3>
+          <p>Amazon prime</p>
+          <p>FREE Returns</p>
+          <button id="add-to-cart-in-product">Add To Cart</button>
+      </div>
+      
+    </div>
+  </div>
+<div class="suggestions">
+   <h2>You may also like</h2>
+<div id="suggestions"></div>
+</div>
+
+
+<script>
+const product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+if (!product) {
+  document.body.innerHTML = "<h2>No product selected</h2>";
+}
+
+document.getElementById("product-image").src = product.image;
+document.getElementById("price").innerHTML =
+  `$${product.price} <span>List price: $${product.listPrice}</span>`;
+document.getElementById("description").textContent = product.description;
+
+// suggestions
+const suggestionsDiv = document.getElementById("suggestions");
+product.suggestions.forEach(img => {
+  const image = document.createElement("img");
+  image.src = img;
+  image.style.width = "190px";
+  image.style.margin = "10px";
+  suggestionsDiv.appendChild(image);
+});
+</script>
+
+</body>
+</html>

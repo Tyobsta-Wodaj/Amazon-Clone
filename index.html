@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+          <a href="#home"><img src="https://logos-world.net/wp-content/uploads/2020/08/Amazon-Logo-2012.png" width="100px" id="logo"></a>
+          <div class="deliverd-to">
+            <p>Deliver to</p>
+            <h3>United Kingdom</h3>
+          </div>
+          
+            <div id="searchdiv">
+                <select id="select">
+                    <option value="all" disabled selected>All</option>
+                    <option value="">op2</option>
+                    <option value="">op3</option>
+                    <option value="">op4</option>
+                    <option value="">op5</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" id="search">
+                <i class="fa-solid fa-magnifying-glass" id="searchicone"></i>
+            </div>
+            <div class="language">
+                <select >
+                    <option value="EN" disabled selected>EN</option>
+                </select>
+            </div>
+            <div class="returns">
+                <p>Returns</p>
+                <h3>& Orders</h3>
+            </div>
+          <button id="signin">Sign in</button>
+          
+          <p id="cart"><i class="fa-solid fa-cart-arrow-down" ></i><span id="num-of-items"> 0</span></p>
+
+        </nav>
+        <div id="nav2">
+            <p>All</p>
+            <p>Today's Deals</p>
+            <p>Customer Survice</p>
+            <p>Register</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+    </header>
+
+
+       <div class="home-slide" id="home">
+    <div class="prev">
+        <i class="fa-solid fa-angle-left prev-btn"></i>
+    </div>
+    <div class="next">
+        <i class="fa-solid fa-angle-right next-btn"></i>
+    </div>
+
+    <div class="home-silde-image">
+        <img src="https://img.freepik.com/free-photo/top-view-books-arrangement_23-2148882754.jpg?semt=ais_hybrid&w=740&q=80">
+        <img src="https://www.shutterstock.com/shutterstock/videos/3789223201/thumb/5.jpg?ip=x480.jfif">
+        <img src="https://w0.peakpx.com/wallpaper/738/1007/HD-wallpaper-pretty-woman-jewellery-model-makeup-graph.jpg">
+        <img src="https://media.istockphoto.com/id/626234448/photo/luxury-handbags.jpg?s=612x612&w=0&k=20&c=Zz4OsUc67DLv5wLftwYd1_NeYmQmb4RCBuaCVttpM4w=">
+        <img src="https://wallpapers.com/images/hd/travis-scott-jordan-1-2400-x-1350-wallpaper-avnptcd9rztvqk6y.jpg">
+    </div>
+</div>
+
+      <div class="cards-container first-cards">
+        <div class="cards">
+            <h2>Free international returns</h2>
+            <img src="images/international.jfif" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="1">Shop More</button>
+                  <button class="add-to-cart" data-set-id="1">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Lunar New Year</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BHGGOY4y5hcnb_OeVOft8XV-2sPnlLzOqw&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="2">Shop More</button>
+                  <button class="add-to-cart" data-set-id="2">Add To Cart</button>
+            </div>
+            
+        </div>
+        <div class="cards">
+            <h2>Toy under $25</h2>
+            <img src="images/toy.jfif" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="3">Shop More</button>
+                  <button class="add-to-cart" data-set-id="3">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Deals in PCs</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYolFwTgs2WB8aAWyo1ltj4cXTmZsH2u4i2Q&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="4">Shop More</button>
+                  <button class="add-to-cart" data-set-id="4">Add To Cart</button>
+            </div>
+          </div>
+          </div>
+
+
+
+
+
+
+      <div id="search-results" class="search-results"></div>
+
+
+
+
+
+
+
+      
+
+      <div class="cards-container">
+        <div class="cards">
+            <h2>Free international returns</h2>
+            <img src="images/bags.webp" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="5">Shop More</button>
+                  <button class="add-to-cart" data-set-id="5">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Lunar New Year</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BHGGOY4y5hcnb_OeVOft8XV-2sPnlLzOqw&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="6">Shop More</button>
+                  <button class="add-to-cart" data-set-id="6">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Toy under $25</h2>
+            <img src="images/bottel.jfif" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="7">Shop More</button>
+                  <button class="add-to-cart" data-set-id="7">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Deals in PCs</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYolFwTgs2WB8aAWyo1ltj4cXTmZsH2u4i2Q&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="8">Shop More</button>
+                  <button class="add-to-cart" data-set-id="8">Add To Cart</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="scrole-horizontal">
+        <h2>Best sells in Sports & Outdoors</h2>
+        <div class="products">
+            <img src="images/damples.jfif" alt="">
+            <img src="images/google.jfif" alt="">
+            <img src="https://cdn.mos.cms.futurecdn.net/CdSqhuDyzkSBvS2cizjC4i.jpg" alt="">
+            <img src="images/damples.jfif" alt="">
+            <img src="images/google.jfif" alt="">
+            <img src="https://cdn.mos.cms.futurecdn.net/CdSqhuDyzkSBvS2cizjC4i.jpg" alt="">
+            <img src="images/google.jfif" alt="">
+            <img src="https://cdn.mos.cms.futurecdn.net/CdSqhuDyzkSBvS2cizjC4i.jpg" alt="">
+            <img src="images/damples.jfif" alt="">
+        </div>
+      </div>
+
+
+       <div class="cards-container">
+        <div class="cards">
+            <h2>Free international returns</h2>
+            <img src="images/international.jfif" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="9">Shop More</button>
+                  <button class="add-to-cart" data-set-id="9">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Lunar New Year</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BHGGOY4y5hcnb_OeVOft8XV-2sPnlLzOqw&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="10">Shop More</button>
+                  <button class="add-to-cart" data-set-id="10">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Toy under $25</h2>
+            <img src="images/toy.jfif" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="11">Shop More</button>
+                  <button class="add-to-cart" data-set-id="11">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Deals in PCs</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYolFwTgs2WB8aAWyo1ltj4cXTmZsH2u4i2Q&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="12">Shop More</button>
+                  <button class="add-to-cart" data-set-id="12">Add To Cart</button>
+            </div>
+        </div>
+      </div>
+
+      
+      <div class="cards-container">
+        <div class="cards">
+            <h2>Free international returns</h2>
+            <img src="images/bags.webp" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="13">Shop More</button>
+                  <button class="add-to-cart" data-set-id="13">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Lunar New Year</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BHGGOY4y5hcnb_OeVOft8XV-2sPnlLzOqw&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="14">Shop More</button>
+                  <button class="add-to-cart" data-set-id="14">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Toy under $25</h2>
+            <img src="images/bottel.jfif" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="15">Shop More</button>
+                  <button class="add-to-cart" data-set-id="15">Add To Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Deals in PCs</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYolFwTgs2WB8aAWyo1ltj4cXTmZsH2u4i2Q&s" alt="">
+            <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="16">Shop More</button>
+                  <button class="add-to-cart" data-set-id="16">Add To Cart</button>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="scrole-horizontal-2">
+        <h2>Deals Under $25</h2>
+        <div class="products-2">
+            <div class="details">
+                 <img src="images/damples.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="17">Shop More</button>
+                  <button class="add-to-cart" data-set-id="17">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/bottel.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="18">Shop More</button>
+                  <button class="add-to-cart" data-set-id="18">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/teeth.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="19">Shop More</button>
+                  <button class="add-to-cart" data-set-id="19">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/bags.webp" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="20">Shop More</button>
+                  <button class="add-to-cart" data-set-id="20">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/headset.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="21">Shop More</button>
+                  <button class="add-to-cart" data-set-id="21">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/oil.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="22">Shop More</button>
+                  <button class="add-to-cart" data-set-id="22">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/clothss.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="23">Shop More</button>
+                  <button class="add-to-cart" data-set-id="23">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/damples.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="24">Shop More</button>
+                  <button class="add-to-cart" data-set-id="24">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/bottel.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="25">Shop More</button>
+                  <button class="add-to-cart" data-set-id="25">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/teeth.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="26">Shop More</button>
+                  <button class="add-to-cart" data-set-id="26">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/bags.webp" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="27">Shop More</button>
+                  <button class="add-to-cart" data-set-id="27">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/headset.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="28">Shop More</button>
+                  <button class="add-to-cart" data-set-id="28">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/oil.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="29">Shop More</button>
+                  <button class="add-to-cart" data-set-id="29">Add To Cart</button>
+            </div>
+            </div>
+            <div class="details">
+                 <img src="images/clothss.jfif" alt="">
+                 <p ><span class="off">25% off</span> <span class="deal">Deal</span></p>
+                 $14.45 <span>List price:$19.54</span>
+                 <p>This product is the best for you!</p>
+                 <div class="more-add-to-cart">
+                  <button class="shop-more" data-set-id="30">Shop More</button>
+                  <button class="add-to-cart" data-set-id="30">Add To Cart</button>
+            </div>
+            </div>
+           
+        </div>
+      </div>
+
+        
+        </div>
+      </div>
+      
+
+<div id="signinpage">
+         <form>
+            <h1>Sign in</h1>
+            <div id="signinform">
+                <label >Mobile Number or Email</label>
+                <input type="text" placeholder="Phone/Email">
+                <label >Password</label>
+                <input type="password" placeholder="At least 6 characters">
+                <button type="submite" id="Continue">Continue</button>
+            </div>
+            <p>Don't have an account?</p>
+            <button id="create-account">Sign Up</button>
+        </form>
+
+</div>
+
+
+<div id="signuppage">
+         <form>
+            <h1>Sign up</h1>
+            <div id="signupform">
+                <label >Your Name</label>
+                <input type="text" placeholder="Enter your name">
+                <label >Mobile Number or Email</label>
+                <input type="text" placeholder="Phone/Email">
+                <label >Password</label>
+                <input type="password" placeholder="At least 6 characters">
+                <button type="submite" id="Continue">Continue</button>
+            </div>
+            <p>Have an account?</p>
+            <button id="have-account">Login with Amazon account</button>
+        </form>
+</div>
+
+
+
+
+<footer>
+    <div id="footerpart">
+        <img src="https://logos-world.net/wp-content/uploads/2020/08/Amazon-Logo-2012.png" width="100px">
+        <p><i class="fa-regular fa-copyright"></i> 1996-2025, Amazon.com</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
